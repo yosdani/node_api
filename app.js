@@ -4,9 +4,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-
+const dotenv = require('dotenv');
 const app = express();
-
+var env = require('node-env-file'); // .env file
+env(__dirname + '/.env');
 var corsOptions = {
 
     //    origin: "http://localhost:8081"
