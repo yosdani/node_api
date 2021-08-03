@@ -15,6 +15,8 @@ var corsOptions = {
     'Access-control-Allow-Credentials':true
 
 };
+var helmet = require('helmet');
+app.use(helmet());
 
 app.use(cors(corsOptions));
 
